@@ -45,12 +45,12 @@ SDK主要包含Framework,API及Library的三部分.Framework定义了SDK整体�
 按照"奥卡姆剃须刀"理论,一个好的产品对第三方使用者使用而言应该是简洁易用,不用改让使用者花费太长时间学习的.这对SDK同样适用---
 SDK不应该对宿主应用有过多的代码侵入,也不应该有复杂频繁的接入工作.比如当开发者需要使用SDK的服务时,只需要在缘由的代码中新增一行即可.
 常见的SDK初始化如下:
-·
-public class Ad{
-
+```
+    public class Ad{
+    
     @TargetApi(9)
     public synchronized static void init(Context context, SdkParams params) {
         //省略多行代码
     }
 }
-·
+```
